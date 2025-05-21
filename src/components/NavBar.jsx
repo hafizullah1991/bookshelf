@@ -1,5 +1,6 @@
+import SearchBar from "./SearchBar";
 
-function NavBar () {
+function NavBar ({onSearch}) {
   return (
     <div>
         <nav className="navbar bg-body-tertiary">
@@ -7,6 +8,7 @@ function NavBar () {
     <a className="navbar-brand" href="/home">
       Bookshelf
     </a>
+    <SearchBar onSearch={onSearch} />
   </div>
 </nav>
     </div>
