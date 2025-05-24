@@ -15,8 +15,6 @@ useEffect(() => {
 }, [searchTerm])
 
 
-
-
   const fetchBooks = async () => {
     setLoading(true)
    const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}`)
